@@ -10,9 +10,9 @@ var ITracker = function() {};
 
 /**
  * Search query.
- * @return {Array.<ITorrent>}
+ * @return {IQueryResponse}
  */
-ITracker.prototype.query = function() {};
+ITracker.prototype.getQuery = function() {};
 
 
 /**
