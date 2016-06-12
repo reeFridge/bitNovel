@@ -1,0 +1,11 @@
+{
+  "name": "torrent-proxy",
+  "version": "0.0.0",
+  "description": "Torrent proxy module which used in bitNovel project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reeFridge",
+  "license": "MIT"
+}
