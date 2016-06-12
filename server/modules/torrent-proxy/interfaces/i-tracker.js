@@ -5,7 +5,7 @@
  * Common torrent-tracker interface.
  * @interface
  */
-var ITracker = function() {};
+ITracker = function() {};
 
 
 /**

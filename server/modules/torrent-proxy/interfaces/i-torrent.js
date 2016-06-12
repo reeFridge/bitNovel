@@ -5,7 +5,7 @@
  * Common torrent interface
  * @interface
  */
-var ITorrent = function() {};
+ITorrent = function() {};
 
 
 /**
