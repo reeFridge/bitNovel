@@ -1,1 +1,3 @@
 .idea
+./server/modules/torrent-proxy/node_modules
+./server/node_modules
