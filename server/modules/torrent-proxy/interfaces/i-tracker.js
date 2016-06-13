@@ -10,14 +10,21 @@ ITracker = function() {};
 
 /**
  * Search query.
- * @return {IQueryResponse}
+ * @param {{
+ *     query: string,
+ *     category: string,
+ *     maxItems: number,
+ *     order: string,
+ *     desc: boolean
+ * }=} opt_params
+ * @return {Promise.<IQueryResponse|error>}
  */
-ITracker.prototype.getQuery = function() {};
+ITracker.prototype.getQuery = function(opt_params) {};
 
 
 /**
  * Tracker availability check.
- * @return {boolean}
+ * @return {Promise.<undefined|error>}
  */
 ITracker.prototype.isAvailable = function() {};
 
