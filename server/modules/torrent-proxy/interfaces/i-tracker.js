@@ -10,14 +10,15 @@ ITracker = function() {};
 
 /**
  * Search query.
- * @return {IQueryResponse}
+ * @param {QueryParams=} opt_params
+ * @return {Promise.<IQueryResponse|error>}
  */
-ITracker.prototype.getQuery = function() {};
+ITracker.prototype.getQuery = function(opt_params) {};
 
 
 /**
  * Tracker availability check.
- * @return {boolean}
+ * @return {Promise.<undefined|error>}
  */
 ITracker.prototype.isAvailable = function() {};
 
@@ -27,3 +28,14 @@ ITracker.prototype.isAvailable = function() {};
  * @return {string}
  */
 ITracker.prototype.getUrl = function() {};
+
+
+/**
+ * @typedef {{
+ *     query: string,
+ *     category: string,
+ *     maxItems: number,
+ *     order: string,
+ *     desc: boolean
+ * }} QueryParams
+ */

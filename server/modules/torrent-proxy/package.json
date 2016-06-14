@@ -9,6 +9,9 @@
   "author": "reeFridge",
   "license": "MIT",
   "dependencies": {
-    "kat-cr": "^0.1.19"
+    "kat-cr": "^0.1.19",
+    "promise": "^7.1.1",
+    "request": "^2.72.0",
+    "tcp-ping": "^0.1.1"
   }
 }
