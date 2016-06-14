@@ -10,13 +10,7 @@ ITracker = function() {};
 
 /**
  * Search query.
- * @param {{
- *     query: string,
- *     category: string,
- *     maxItems: number,
- *     order: string,
- *     desc: boolean
- * }=} opt_params
+ * @param {QueryParams=} opt_params
  * @return {Promise.<IQueryResponse|error>}
  */
 ITracker.prototype.getQuery = function(opt_params) {};
@@ -34,3 +28,14 @@ ITracker.prototype.isAvailable = function() {};
  * @return {string}
  */
 ITracker.prototype.getUrl = function() {};
+
+
+/**
+ * @typedef {{
+ *     query: string,
+ *     category: string,
+ *     maxItems: number,
+ *     order: string,
+ *     desc: boolean
+ * }} QueryParams
+ */
